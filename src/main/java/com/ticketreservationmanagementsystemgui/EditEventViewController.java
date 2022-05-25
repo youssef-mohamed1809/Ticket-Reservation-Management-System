@@ -89,6 +89,7 @@ public class EditEventViewController implements Initializable {
         stage.show();
     }
 
+
     @FXML
     void add_category(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("add-category-view.fxml"));

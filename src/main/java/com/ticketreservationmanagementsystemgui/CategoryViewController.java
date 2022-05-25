@@ -140,7 +140,9 @@ public class CategoryViewController implements Initializable {
             editBtn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    TextInputDialog td = new TextInputDialog("Input new category name");
+                    TextInputDialog td = new TextInputDialog();
+                    td.setHeaderText("Input New Category Name");
+                    td.setTitle("Edit Category");
                     td.showAndWait().ifPresent(string -> c.name = string);
                     try {
                         root = FXMLLoader.load(getClass().getResource("category-view.fxml"));

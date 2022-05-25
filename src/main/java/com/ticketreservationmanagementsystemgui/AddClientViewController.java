@@ -76,7 +76,7 @@ public class AddClientViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        add_client_btn.setOnMouseEntered(e -> add_client_btn.setTextFill(Paint.valueOf("#82DBD8")));
+        add_client_btn.setOnMouseEntered(e -> add_client_btn.setTextFill(Paint.valueOf("#00FFAB")));
         add_client_btn.setOnMouseExited(e -> add_client_btn.setTextFill(Paint.valueOf("white")));
 
         search_event_btn.setOnMouseEntered(e -> search_event_btn.setTextFill(Paint.valueOf("#82DBD8")));
@@ -154,28 +154,6 @@ public class AddClientViewController implements Initializable {
             }
         }
     }
-
-//    @FXML
-//    void addClient() throws IOException {
-//        root = FXMLLoader.load(getClass().getResource("add-client-view.fxml"));
-//        stage = (Stage)current_root.getScene().getWindow();
-//        scene = new Scene(root);
-//        stage.setTitle("Add Client");
-//        stage.setScene(scene);
-//        stage.setResizable(false);
-//        stage.show();
-//    }
-
-//    @FXML
-//    void logout() throws IOException {
-//        root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
-//        stage = (Stage)current_root.getScene().getWindow();
-//        scene = new Scene(root);
-//        stage.setTitle("Login");
-//        stage.setScene(scene);
-//        stage.setResizable(false);
-//        stage.show();
-//    }
 
     @FXML
     void searchCategory(){

@@ -50,7 +50,7 @@
             <Font name="Georgia Pro Cond" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="unbook_btn" layoutX="708.0" layoutY="510.0" mnemonicParsing="false" onAction="#unbook" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: #0A1931;" text="Unbook" textFill="WHITE">
+      <Button fx:id="unbook_btn" layoutX="708.0" layoutY="510.0" mnemonicParsing="false" onAction="#unbook" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: #0A1931;" text="Remove Booking" textFill="WHITE">
          <font>
             <Font name="Georgia Pro Cond" size="20.0" />
          </font>

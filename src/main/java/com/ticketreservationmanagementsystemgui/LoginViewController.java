@@ -84,4 +84,17 @@ public class LoginViewController{
         stage.show();
     }
 
+    @FXML
+    void createAccount() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("create-account-view.fxml"));
+        stage = (Stage)current_root.getScene().getWindow();
+        scene = new Scene(root);
+        stage.setTitle("Create Employee Account");
+        stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
+        stage.setResizable(false);
+        stage.show();
+    }
+
 }

@@ -185,7 +185,9 @@ public class SingleEventViewController implements Initializable {
 
     @FXML
     void book(){
-        TextInputDialog td = new TextInputDialog("Input client name or serial number");
+        TextInputDialog td = new TextInputDialog();
+        td.setHeaderText("Input client name or serial number");
+        td.setTitle("Book Event");
         td.showAndWait().ifPresent(string -> {
             try {
                 bookEvent(string);
@@ -239,7 +241,9 @@ public class SingleEventViewController implements Initializable {
 
     @FXML
     void unbook(){
-        TextInputDialog td = new TextInputDialog("Input client name or serial number");
+        TextInputDialog td = new TextInputDialog();
+        td.setHeaderText("Input client name or serial number");
+        td.setTitle("Remove Booking");
         td.showAndWait().ifPresent(string -> {
             try {
                 unbookEvent(string);
@@ -267,7 +271,7 @@ public class SingleEventViewController implements Initializable {
                                         e.tickets++;
                                         client.removeEvent(e);
                                         Alert a = new Alert(Alert.AlertType.CONFIRMATION);
-                                        a.setHeaderText("Event successfully unbooked");
+                                        a.setHeaderText("Booking removed successfully");
                                         a.show();
                                         break;
                                     }
