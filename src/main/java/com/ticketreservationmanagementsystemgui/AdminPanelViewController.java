@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
@@ -39,6 +40,8 @@ public class AdminPanelViewController implements Initializable {
         scene = new Scene(root);
         stage.setTitle("Add Category");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }
@@ -50,6 +53,8 @@ public class AdminPanelViewController implements Initializable {
         scene = new Scene(root);
         stage.setTitle("Categories");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }
@@ -61,6 +66,8 @@ public class AdminPanelViewController implements Initializable {
         scene = new Scene(root);
         stage.setTitle("Add Event");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }
@@ -72,6 +79,8 @@ public class AdminPanelViewController implements Initializable {
         scene = new Scene(root);
         stage.setTitle("Events");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }
@@ -84,6 +93,8 @@ public class AdminPanelViewController implements Initializable {
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.setResizable(false);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.show();
     }
 

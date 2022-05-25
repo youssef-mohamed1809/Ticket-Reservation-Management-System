@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
@@ -60,6 +61,8 @@ public class AddEventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Categories");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -72,6 +75,8 @@ public class AddEventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Category");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -83,6 +88,8 @@ public class AddEventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Events");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -95,6 +102,8 @@ public class AddEventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Login");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -137,6 +146,8 @@ public class AddEventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Event");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
@@ -86,6 +87,8 @@ public class SingleCategoryViewController implements Initializable {
                 stage = (Stage)current_root.getScene().getWindow();
                 scene = new Scene(root);
                 stage.setTitle("Add Client");
+                Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                stage.getIcons().add(icon);
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
@@ -101,6 +104,8 @@ public class SingleCategoryViewController implements Initializable {
         stage.setTitle("Add Client");
         stage.setScene(scene);
         stage.setResizable(false);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.show();
     }
 
@@ -111,6 +116,8 @@ public class SingleCategoryViewController implements Initializable {
         scene = new Scene(root);
         stage.setTitle("Login");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }
@@ -138,6 +145,8 @@ public class SingleCategoryViewController implements Initializable {
                 stage = (Stage)current_root.getScene().getWindow();
                 scene = new Scene(root);
                 stage.setTitle("Add Client");
+                Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                stage.getIcons().add(icon);
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
@@ -168,6 +177,8 @@ public class SingleCategoryViewController implements Initializable {
                     stage = (Stage)current_root.getScene().getWindow();
                     scene = new Scene(root);
                     stage.setTitle("Add Client");
+                    Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                    stage.getIcons().add(icon);
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.show();

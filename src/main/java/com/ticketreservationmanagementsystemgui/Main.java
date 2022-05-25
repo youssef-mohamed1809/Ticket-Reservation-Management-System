@@ -3,6 +3,7 @@ package com.ticketreservationmanagementsystemgui;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,6 +30,8 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Login");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

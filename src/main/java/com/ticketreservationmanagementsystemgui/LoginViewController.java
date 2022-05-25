@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -64,6 +65,8 @@ public class LoginViewController{
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Admin Panel");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -75,6 +78,8 @@ public class LoginViewController{
         scene = new Scene(root);
         stage.setTitle("Employee Panel");
         stage.setScene(scene);
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setResizable(false);
         stage.show();
     }

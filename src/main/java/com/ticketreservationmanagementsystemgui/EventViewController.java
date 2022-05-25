@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
@@ -24,7 +25,7 @@ public class EventViewController implements Initializable {
     Parent root;
     Stage stage;
     Scene scene;
-    
+
 
     @FXML
     ScrollPane scroll_bar;
@@ -48,6 +49,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Category");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -59,6 +62,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Categories");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -70,6 +75,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Event");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -81,6 +88,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Events");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -94,6 +103,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Login");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -104,6 +115,8 @@ public class EventViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Edit Event");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -168,6 +181,8 @@ public class EventViewController implements Initializable {
                             stage = (Stage)current_root.getScene().getWindow();
                             scene = new Scene(root);
                             stage.setTitle("Events");
+                            Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                            stage.getIcons().add(icon);
                             stage.setScene(scene);
                             stage.setResizable(false);
                             stage.show();

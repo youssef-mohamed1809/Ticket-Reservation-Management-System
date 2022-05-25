@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
@@ -46,6 +47,8 @@ public class CategoryViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Category");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -57,6 +60,8 @@ public class CategoryViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Categories");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -68,6 +73,8 @@ public class CategoryViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Event");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -79,6 +86,8 @@ public class CategoryViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Events");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -90,6 +99,8 @@ public class CategoryViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Login");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -139,6 +150,8 @@ public class CategoryViewController implements Initializable {
                     stage = (Stage)current_root.getScene().getWindow();
                     scene = new Scene(root);
                     stage.setTitle("Categories");
+                    Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                    stage.getIcons().add(icon);
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.show();
@@ -160,6 +173,8 @@ public class CategoryViewController implements Initializable {
                     scene = new Scene(root);
                     stage.setTitle("Categories");
                     stage.setScene(scene);
+                    Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                    stage.getIcons().add(icon);
                     stage.setResizable(false);
                     stage.show();
                 }

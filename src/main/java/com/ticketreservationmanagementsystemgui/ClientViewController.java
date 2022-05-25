@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
@@ -65,6 +66,8 @@ public class ClientViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Employee Panel");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -134,6 +137,8 @@ public class ClientViewController implements Initializable {
                 stage = (Stage)current_root.getScene().getWindow();
                 scene = new Scene(root);
                 stage.setTitle("View Client");
+                Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                stage.getIcons().add(icon);
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
@@ -164,6 +169,8 @@ public class ClientViewController implements Initializable {
                     stage = (Stage)current_root.getScene().getWindow();
                     scene = new Scene(root);
                     stage.setTitle("View Event");
+                    Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                    stage.getIcons().add(icon);
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.show();
@@ -178,6 +185,8 @@ public class ClientViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Add Client");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -189,6 +198,8 @@ public class ClientViewController implements Initializable {
         stage = (Stage)current_root.getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Login");
+        Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -216,6 +227,8 @@ public class ClientViewController implements Initializable {
                 stage = (Stage)current_root.getScene().getWindow();
                 scene = new Scene(root);
                 stage.setTitle("View Category");
+                Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                stage.getIcons().add(icon);
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
