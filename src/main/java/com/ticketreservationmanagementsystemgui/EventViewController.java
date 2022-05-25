@@ -20,9 +20,11 @@ public class EventViewController implements Initializable {
 
     public static String event_edited;
 
+
     Parent root;
     Stage stage;
     Scene scene;
+    
 
     @FXML
     ScrollPane scroll_bar;
@@ -157,7 +159,7 @@ public class EventViewController implements Initializable {
                     deleteBtn.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {
-                            Main.categories.remove(c);
+                            c.events.remove(e);
                             try {
                                 root = FXMLLoader.load(getClass().getResource("event-view.fxml"));
                             } catch (IOException e) {
