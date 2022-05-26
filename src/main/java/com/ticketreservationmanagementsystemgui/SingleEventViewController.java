@@ -209,17 +209,16 @@ public class SingleEventViewController implements Initializable {
             for(Category c: Main.categories){
                 for(Event e: c.events){
                     if(e.name.equals(EmployeePanelViewController.searchedEvent)){
-                        if(e.tickets > 0){
-                            e.tickets--;
-                            for(Client client: Main.clients){
-                                if(client.name.equals(s) || client.serial_number.equals(s)){
-                                    client.addEvent(e);
-                                    Alert a = new Alert(Alert.AlertType.CONFIRMATION);
-                                    a.setHeaderText("Event successfully booked");
-                                    a.show();
-                                    break;
-                                }
+                        try {
+                            if (e.tickets == 0) {
+                                throw new NoTicketException("No Tickets Available");
                             }
+                        }catch(NoTicketException noticket){
+                            Alert a = new Alert(Alert.AlertType.ERROR);
+                            a.setTitle("Error");
+                            a.setHeaderText("No more tickets exception");
+                            a.setContentText("No more tickets are available");
+                            a.show();
                         }
                     }
                 }

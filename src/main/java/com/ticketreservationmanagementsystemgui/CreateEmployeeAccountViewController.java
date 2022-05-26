@@ -49,22 +49,26 @@ public class CreateEmployeeAccountViewController implements Initializable {
             }
         }
 
-        if(!duplicatePresent){
-            Main.system_users.add(new Employee(entered_username, entered_password));
-            Alert a = new Alert(Alert.AlertType.CONFIRMATION);
-            a.setHeaderText("Employee Account Created");
-            a.show();
-            root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
-            stage = (Stage)current_root.getScene().getWindow();
-            scene = new Scene(root);
-            stage.setTitle("Login");
-            stage.setScene(scene);
-            stage.setResizable(false);
-            Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
-            stage.getIcons().add(icon);
-            stage.show();
+        try{
+            if(!duplicatePresent){
+                Main.system_users.add(new Employee(entered_username, entered_password));
+                Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+                a.setHeaderText("Employee Account Created");
+                a.show();
+                root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
+                stage = (Stage)current_root.getScene().getWindow();
+                scene = new Scene(root);
+                stage.setTitle("Login");
+                stage.setScene(scene);
+                stage.setResizable(false);
+                Image icon = new Image(Main.class.getResource("Logo.png").toExternalForm());
+                stage.getIcons().add(icon);
+                stage.show();
 
-        }else{
+            }else{
+                throw new DuplicateUsernameException("An employee with this username is already available");
+            }
+        }catch(DuplicateUsernameException exception){
             Alert a = new Alert(Alert.AlertType.ERROR);
             a.setHeaderText("Employee Account not Created because an account with this username is already present");
             a.show();
