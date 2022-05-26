@@ -45,7 +45,7 @@
             <Font name="Georgia Pro Cond Black" size="19.0" />
          </font>
       </Text>
-      <Hyperlink layoutX="146.0" layoutY="543.0" onAction="#createAccount" text="Create new employee acount" textFill="WHITE">
+      <Hyperlink layoutX="146.0" layoutY="543.0" onAction="#createAccount" text="Create new employee account" textFill="WHITE">
          <font>
             <Font name="Georgia Pro Cond" size="15.0" />
          </font>

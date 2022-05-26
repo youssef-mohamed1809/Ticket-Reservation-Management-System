@@ -212,6 +212,19 @@ public class SingleEventViewController implements Initializable {
                         try {
                             if (e.tickets == 0) {
                                 throw new NoTicketException("No Tickets Available");
+                            }else{
+                                e.tickets--;
+                                for(Client c1: Main.clients){
+                                    if(c1.name.equals(s) || c1.serial_number.equals(s)){
+                                        c1.addEvent(e);
+                                        Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+                                        a.setTitle("Event added");
+                                        a.setHeaderText("Event booked");
+                                        a.setContentText("Event booked successfully");
+                                        a.show();
+                                        break;
+                                    }
+                                }
                             }
                         }catch(NoTicketException noticket){
                             Alert a = new Alert(Alert.AlertType.ERROR);
