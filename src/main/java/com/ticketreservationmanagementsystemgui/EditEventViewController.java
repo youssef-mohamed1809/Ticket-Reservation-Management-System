@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
@@ -60,7 +61,7 @@ public class EditEventViewController implements Initializable {
         String end = event_end_time.getText();
 
         boolean found;
-        found = true;
+        found = false;
         for(Category c: Main.categories){
             for(Event e: c.events){
                 if(e.name.equals(EventViewController.event_edited)){
@@ -76,6 +77,20 @@ public class EditEventViewController implements Initializable {
             if(found){
                 break;
             }
+        }
+
+        if(found){
+            Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+            a.setTitle("Event updated");
+            a.setHeaderText("Event Saved");
+            a.setContentText("Event data is updated successfully");
+            a.show();
+        }else{
+            Alert a = new Alert(Alert.AlertType.ERROR);
+            a.setTitle("Error");
+            a.setHeaderText("Event not saved");
+            a.setContentText("An error occured please try again");
+            a.show();
         }
 
         root = FXMLLoader.load(getClass().getResource("event-view.fxml"));
